@@ -1,0 +1,77 @@
+HELPFUL RESOURCES
+
+// This tutorial explains how to use async, await and promises to manage delays.
+// Tutorial: https://blog.lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795
+
+// This step by step tutorial explains how to use FileReader.
+// Tutorial: http://tutorials.jenkov.com/html5/file-api.html
+
+
+
+Keep in mind:
+
+1. In Javascript we are operating on html elements. We use id's and classes to select
+those elements. 
+Here we are using node.js syntax to run Javascript operations.
+
+2. We must pre-process the prediction images that the user inputs in the same way that
+the images that were used to train the model were pre-processed. We write
+Tensorflow code to do this.
+
+// Pre-process the image
+let tensor = tf.fromPixels(image)
+.resizeNearestNeighbor([96,96]) // change the image size here
+.toFloat()
+.div(tf.scalar(255.0))
+.expandDims();
+
+3. The images must also be resized to the image size that was used
+when training the model. Here the size is 96x96.
+
+
+
+Step 1: index.html
+
+We load all the javascript files into index.html.
+This is like having all the code (and functions) from each file on 
+the same page. All variables and functions are available.
+Therefore, there's no need to import files.
+
+<script src="jscript/target_classes.js"></script>
+<script src="jscript/app_startup_code.js"></script>
+<script src="jscript/app_batch_prediction_code.js"></script>
+
+
+
+Step 2: app_startup_code.js
+
+Here it's important to remember that we simulate a click
+on the predict button in order to make a prediction.
+
+In this file we have the code for:
+a) Loading the model, when the page loads.
+b) Pre-processing the default image and then making a prediction on it
+when the page loads.
+b) Reading the image file/s the user selects.
+
+
+
+Step 3: app_batch_prediction_code.js
+
+Here we pre-process the images that the user selected and predict 
+on them. 
+
+To prevent errors it's important to control the speed of javascrip execution. We do
+that here.
+
+Here we also write the results to the page.
+
+
+
+
+
+
+
+
+
+
