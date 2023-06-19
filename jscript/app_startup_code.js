@@ -15,8 +15,6 @@ function simulateClick(tabID) {
 	document.getElementById(tabID).click();
 }
 
-
-
 function predictOnLoad() {
 	
 	// Simulate a click on the predict button
