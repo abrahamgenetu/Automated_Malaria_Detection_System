@@ -1,14 +1,4 @@
-HELPFUL RESOURCES
 
-// This tutorial explains how to use async, await and promises to manage delays.
-// Tutorial: https://blog.lavrton.com/javascript-loops-how-to-handle-async-await-6252dd3c795
-
-// This step by step tutorial explains how to use FileReader.
-// Tutorial: http://tutorials.jenkov.com/html5/file-api.html
-
-
-
-Keep in mind:
 
 1. In Javascript we are operating on html elements. We use id's and classes to select
 those elements. 
