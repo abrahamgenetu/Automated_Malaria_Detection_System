@@ -44,13 +44,6 @@
 
   <link rel="shortcut icon" type="image/png" href="robotfavicon.png">
 
-  <!-- =======================================================
-  * Template Name: Malaria.ai
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/Malaria.ai-free-medical-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -89,12 +82,13 @@
           <li class="dropdown"><a href="#"><span>Dx Option</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="cnn_dx.html">CNN dx</a></li>
+              <li><a href="svm_dx.html">SVM dx</a></li>
               <li class="dropdown"><a href="#"><span>Transfer Learning Dx</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="Vgg19_dx.html">Vgg19 dx</a></li>
                   <li><a href="InceptionV3_dx.html">InceptionV3 dx</a></li>
                   <li><a href="ResNet_dx.html">ResNet dx</a></li>
-                  <li><a href="Comingsoon.html">Unet dx</a></li>
+                  <li><a href="Others.html">Unet dx</a></li>
                 </ul>
               </li>
               <li><a href="#">Mask RCNN dx</a></li>
@@ -404,22 +398,24 @@ and is wrapped around the whole page content. -->
 
         <div class="row gy-4">
           <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
+            <ul class="nav nav-tabs flex-column">   
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Convolutional Neural Networks</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Support Vector Machine(SVM)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">VGG16</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Convolutional Neural
+                  Networks(CNN)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">ResNet</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">VGG19</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">InceptionV3</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">ResNet</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Masked-RCNN</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">InceptionV3</a>
               </li>
+           
             </ul>
           </div>
           <div class="col-lg-9">
@@ -435,7 +431,7 @@ and is wrapped around the whole page content. -->
                       and performance.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/cnn.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -443,22 +439,22 @@ and is wrapped around the whole page content. -->
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Transfer Learning with VGG16</h3>
-                    <p class="fst-italic">VGG16 is a deep convolutional neural network that was trained on the ImageNet
+                    <p class="fst-italic">VGG19 is a deep convolutional neural network that was trained on the ImageNet
                       dataset.</p>
                     <p> In our
                       system, we use VGG16 as a feature extractor to extract features from blood cell images. We remove
-                      the last layer of the VGG16 model and replace it with a new layer that is trained to classify
+                      the last layer of the VGG19 model and replace it with a new layer that is trained to classify
                       blood cell images as either infected or uninfected.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/vgg.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Inception V3</h3>
+                    <h3>Transfer Learning with Inception V3</h3>
                     <p class="fst-italic">Inception v3 is a convolutional neural network architecture designed for image
                       classification and object recognition tasks. It was developed by Google researchers in 2015 as an
                       extension of the original Inception architecture.</p>
@@ -467,25 +463,40 @@ and is wrapped around the whole page content. -->
                       odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/inception.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-4">
                 <div class="row gy-4">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Faster R-CNN</h3>
-                    <p class="fst-italic">Faster R-CNN is a type of object detection model that was first proposed by
-                      Shaoqing Ren et al. in 2015. It is an extension of the popular R-CNN and Fast R-CNN models, and is
-                      designed to be both accurate and fast</p>
-                    <p>The basic architecture of Faster R-CNN consists of two main components: a Region Proposal Network
-                      (RPN) and a Fast R-CNN network. The RPN is a fully convolutional network that generates region
-                      proposals, which are candidate object bounding boxes, and scores them based on their likelihood of
-                      containing an object. The Fast R-CNN network then takes these proposals and extracts features from
-                      them to classify and refine the bounding boxes.</p>
+                    <h3>Transfer Learning with ResNet 50</h3>
+                    <p class="fst-italic">Transfer learning with ResNet50 for malaria detection system is a technique in
+                      deep learning where the pre-trained ResNet50 convolutional neural network model is used to train a
+                      new model for the specific task of detecting malaria in blood smear images.</p>
+                    <p> The pre-trained ResNet50 model, which has been previously trained on the large-scale ImageNet
+                      dataset, is fine-tuned on a smaller dataset of malaria infected and uninfected blood smear images.
+                      By fine-tuning the pre-trained model on the specific task of malaria detection, the model can
+                      learn to recognize features that are relevant to the detection of malaria from the blood smear
+                      images.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/resnet.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Support Vector Machine(SVM)</h3>
+                    <p class="fst-italic">Support Vector Machine (SVM) is a powerful machine learning algorithm used for
+                      classification and regression analysis. In the context of malaria detection, SVM can be used to
+                      classify blood samples as either infected or uninfected with malaria parasites.</p>
+                    <p> SVM is a popular machine learning method for malaria detection due to its ability to handle
+                      high-dimensional data and its robustness to noise and outliers</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/svm.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -515,7 +526,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Dr. Melkamu Hunegnaw</h4>
-                <span>Project Advisor</span>
+                <span>Team Advisor</span>
                 <p>Mentor of malar.ai providing guidance and support to our teams for Malar.AI development.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -531,7 +542,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Abraham Genetu</h4>
-                <span>Production Developer</span>
+                <span>Team Member</span>
                 <p>Full stack developer with expertise in both data science and web development.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -548,7 +559,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sador Yonas</h4>
-                <span>Project Manager</span>
+                <span>Team Member</span>
                 <p>Managing the development of our malaria detection system delivered on time and within budget</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -565,7 +576,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Eshetu Negash</h4>
-                <span>Member</span>
+                <span>Team Member</span>
                 <p>An experienced dataset collector with a strong background in data collection and management.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -582,7 +593,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Moges Abebe</h4>
-                <span>Member</span>
+                <span>Team Member</span>
                 <p>Dataset collector with a strong background in data collection and management.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -598,7 +609,7 @@ and is wrapped around the whole page content. -->
               <div class="pic"><img src="assets/img/doctors/member.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Yared Minwuyelet</h4>
-                <span>Member</span>
+                <span>Team Member</span>
                 <p>Marketing specialist with expertise in digital marketing, branding, and content creation. </p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>

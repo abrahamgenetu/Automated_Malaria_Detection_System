@@ -44,13 +44,7 @@
 
   <link rel="shortcut icon" type="image/png" href="robotfavicon.png">
 
-  <!-- =======================================================
-  * Template Name: Malaria.ai
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/Malaria.ai-free-medical-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -86,21 +80,24 @@
           <li><a class="nav-link scrollto" href="index.html">Services</a></li>
           <li><a class="nav-link scrollto active" href="index.html">Models</a></li>
 
-          <li class="dropdown active"><a href="#"><span>Dx Option</span> <i class="bi bi-chevron-down"></i></a>
+
+          <li class="dropdown"><a href="#"><span>Dx Option</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="cnn_dx.html">CNN dx</a></li>
+              <li><a href="svm_dx.html">SVM dx</a></li>
               <li class="dropdown"><a href="#"><span>Transfer Learning Dx</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="Vgg19_dx.html">Vgg19 dx</a></li>
                   <li><a href="InceptionV3_dx.html">InceptionV3 dx</a></li>
                   <li><a href="ResNet_dx.html">ResNet dx</a></li>
-                  <li><a href="MobileNet_dx.html">MobileNet dx</a></li>
+                  <li><a href="Others.html">Unet dx</a></li>
                 </ul>
               </li>
               <li><a href="#">Mask RCNN dx</a></li>
               <li><a href="#">Faster RCNN dx</a></li>
             </ul>
           </li>
+
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -112,10 +109,131 @@
     </div>
   </header><!-- End Header -->
   <!-- ======= Appointment Section ======= -->
+  <!-- ======= Departments Section ======= -->
+  <section id="departments" class="departments">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Models</h2>
+        <p>Our system combines the power of computer vision and machine learning to provide fast and accurate
+          diagnosis of malaria. We use the following algorithms in our malaria detection system:</p>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Support Vector Machine(SVM)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " data-bs-toggle="tab" href="#tab-1">Convolutional Neural
+                Networks(CNN)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">VGG19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-4">ResNet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">InceptionV3</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-lg-9">
+          <div class="tab-content">
+            <div class="tab-pane " id="tab-1">
+              <div class="row gy-4">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Convolutional Neural Networks</h3>
+                  <p class="fst-italic">CNNs are a type of deep learning algorithm that are commonly used for image
+                    classification and object detection.</p>
+                  <p> In our system, we use CNNs to classify blood cell images as either infected or
+                    uninfected. We train the CNNs on a large dataset of blood cell images to improve their accuracy
+                    and performance.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/cnn.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <div class="row gy-4">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Transfer Learning with VGG16</h3>
+                  <p class="fst-italic">VGG19 is a deep convolutional neural network that was trained on the ImageNet
+                    dataset.</p>
+                  <p> In our
+                    system, we use VGG16 as a feature extractor to extract features from blood cell images. We remove
+                    the last layer of the VGG19 model and replace it with a new layer that is trained to classify
+                    blood cell images as either infected or uninfected.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/vgg.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <div class="row gy-4">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Transfer Learning with Inception V3</h3>
+                  <p class="fst-italic">Inception v3 is a convolutional neural network architecture designed for image
+                    classification and object recognition tasks. It was developed by Google researchers in 2015 as an
+                    extension of the original Inception architecture.</p>
+                  <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                    necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
+                    odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/inception.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane active show" id="tab-4">
+              <div class="row gy-4">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Transfer Learning with ResNet 50</h3>
+                  <p class="fst-italic">Transfer learning with ResNet50 for malaria detection system is a technique in
+                    deep learning where the pre-trained ResNet50 convolutional neural network model is used to train a
+                    new model for the specific task of detecting malaria in blood smear images.</p>
+                  <p> The pre-trained ResNet50 model, which has been previously trained on the large-scale ImageNet
+                    dataset, is fine-tuned on a smaller dataset of malaria infected and uninfected blood smear images.
+                    By fine-tuning the pre-trained model on the specific task of malaria detection, the model can
+                    learn to recognize features that are relevant to the detection of malaria from the blood smear
+                    images.</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/resnet.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-5">
+              <div class="row gy-4">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Support Vector Machine(SVM)</h3>
+                  <p class="fst-italic">Support Vector Machine (SVM) is a powerful machine learning algorithm used for
+                    classification and regression analysis. In the context of malaria detection, SVM can be used to
+                    classify blood samples as either infected or uninfected with malaria parasites.</p>
+                  <p> SVM is a popular machine learning method for malaria detection due to its ability to handle
+                    high-dimensional data and its robustness to noise and outliers</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="assets/img/svm.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Departments Section -->
   <section id="appointment" class="appointment section-bg">
     <div class="container">
       <div class="section-title">
-        <br> <br><br>
+
         <h2>Malaria Diagnosis -- ResNet 50 Classification</h2>
         <p>Our ResNet 50 model offers high accuracy and reliability for image classification tasks across various
           domains. Choose our powerful tool for your research, healthcare, or business needs.</p>
