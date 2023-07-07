@@ -1,4 +1,4 @@
-Automated Web-Based Malaria Detection System
+##Automated Web-Based Malaria Detection System
 
 This project is an automated web-based malaria detection system that uses machine learning, deep learning, and transfer learning techniques. The system is designed to help diagnose malaria more accurately and efficiently, especially in areas with limited access to healthcare facilities.
 
