@@ -13,9 +13,9 @@ The demo of the project can be accessed at [https://malar-ai.netlify.app/. ↗](
 
 Instructions for Running the Project Locally:
 1. Clone the repository to your local machine.
-2. Install the necessary dependencies by running `pip install -r requirements.txt`.
+2. Install the necessary JS dependencies
 3. Run the web application with `index.html`.
-4. Access the application at [http://localhost:5000/ ↗](http://localhost:5000/) in your web browser.
+4. Access the application at [http://localhost/ ↗](http://localhost/) in your web browser.
 
 Contributors:
 This project is developed by Abraham Genetu. If you have any suggestions or feedback, please feel free to submit a pull request or contact us at info.abrahamgenetu@gmail.com.
