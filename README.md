@@ -20,5 +20,9 @@ Instructions for Running the Project Locally:
 Contributors:
 This project is developed by Abraham Genetu. If you have any suggestions or feedback, please feel free to submit a pull request or contact us at info.abrahamgenetu@gmail.com.
 
-License:
-This project is licensed under the MIT License - see the LICENSE.md file for details....
+@article{taye2024automated,
+  title={Automated Web-Based Malaria Detection System with Machine Learning and Deep Learning Techniques},
+  author={Taye, Abraham G and Yemane, Sador and Negash, Eshetu and Minwuyelet, Yared and Abebe, Moges and Asmare, Melkamu Hunegnaw},
+  journal={arXiv preprint arXiv:2407.00120},
+  year={2024}
+}
